@@ -1,0 +1,6 @@
+import type { Request, Response, NextFunction } from "express";
+
+export function logger(req: Request, res: Response, next: NextFunction) {
+    console.info(`${req.method} ${req.path}`);
+    next();
+}
