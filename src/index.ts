@@ -1,7 +1,7 @@
 import express from "express";
 import router from "./routes/index.js";
 import { logger } from "./middleware/logger.js";
-import { errorHandler } from "./middleware/error-handler.js";
+import { errorHandler, notFoundHandler } from "./middleware/error-handler.js";
 
 const app = express();
 const PORT = 3000;
@@ -18,6 +18,7 @@ app.get("/health", (req, res) => {
     });
 });
 
+app.use(notFoundHandler);
 app.use(errorHandler);
 
 app.listen(PORT, () => {
