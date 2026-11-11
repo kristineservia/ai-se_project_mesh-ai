@@ -1,6 +1,6 @@
 import type { Request, Response, NextFunction } from "express";
 
-//errorHandler() function
+//500 Internal Server Error  errorHandler() function
 export function errorHandler(
     err: Error, 
     req: Request,
@@ -11,5 +11,14 @@ export function errorHandler(
         success: false,
         data: null,
         error: "Internal Server Error",
+    });
+}
+
+//404 Not Found Error  notFoundHandler() function
+export function notFoundHandler(req: Request, res: Response) {
+    res.status(404).json({
+        success: false,
+        data: null, 
+        error: "Not Found",
     });
 }
