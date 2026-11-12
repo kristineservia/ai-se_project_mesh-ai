@@ -21,6 +21,6 @@ export function notFoundHandler(req: Request, res: Response) {
     res.status(404).json({
         success: false,
         data: null, 
-        error: "Not Found",
+        error: `Route ${req.method} ${req.originalUrl} not found`,
     });
 }
