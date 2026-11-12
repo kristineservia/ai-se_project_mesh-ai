@@ -20,3 +20,11 @@ export function registerUser(req: Request, res: Response): void {
         error: null,
     });
 }
+
+export function loginUser(req: Request, res: Response): void {
+    res.status(200).json({
+        success: true,
+        data: {},
+        error: null,
+    });
+}
