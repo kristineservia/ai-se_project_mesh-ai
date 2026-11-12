@@ -12,3 +12,11 @@ export function getCurrentUser(req: Request, res: Response): void {
         error: null,
     });
 }
+
+export function registerUser(req: Request, res: Response): void {
+    res.status(201).json({
+        success: true,
+        data: {},
+        error: null,
+    });
+}
