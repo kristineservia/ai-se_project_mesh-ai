@@ -8,3 +8,12 @@ export function getChats(req: Request, res: Response): void {
     });
 }
 
+export function createChat(req: Request, res: Response): void {
+    res.status(201).json({
+        success: true,
+        data: {},
+        error: null,
+    });
+}
+
+
