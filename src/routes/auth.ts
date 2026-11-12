@@ -7,5 +7,5 @@ authRouter.get("/me", getCurrentUser);
 authRouter.post("/register", registerUser);
 authRouter.post("/login", loginUser);
 
-export {authRouter};
+export { authRouter };
 
