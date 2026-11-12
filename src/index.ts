@@ -18,6 +18,10 @@ app.get("/health", (req, res) => {
     });
 });
 
+app.get("/test-error", (req, res) => {
+    throw new Error("Test error");
+});
+
 app.use(notFoundHandler);
 app.use(errorHandler);
 
