@@ -28,4 +28,11 @@ export function deleteChat(req: Request, res: Response): void {
     res.status(204).send();
 }
 
+export function sendMessage(req: Request, res: Response): void {
+    res.status(201).json({
+        success: true,
+        data: {},
+        error: null,
+    });
+}
 
