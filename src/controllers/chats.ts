@@ -24,4 +24,8 @@ export function getChatById(req: Request, res: Response): void {
     });
 }
 
+export function deleteChat(req: Request, res: Response): void {
+    res.status(204).send();
+}
+
 
