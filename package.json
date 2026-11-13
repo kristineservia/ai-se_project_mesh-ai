@@ -1,6 +1,7 @@
 {
   "name": "ai-se_project_mesh-ai",
   "version": "1.0.0",
+  "part": "1",
   "description": "MeshAI backend API scaffold built with Node.js, Express, and TypeScript.",
   "main": "index.js",
   "scripts": {
