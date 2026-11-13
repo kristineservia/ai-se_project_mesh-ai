@@ -24,3 +24,7 @@ export function getDocumentById(req: Request, res: Response): void {
     });
 }
 
+export function deleteDocument(req: Request, res: Response): void {
+    res.status(204).send();
+}
+
