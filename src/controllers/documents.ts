@@ -16,3 +16,11 @@ export function getDocuments(req: Request, res: Response): void {
     });
 }
 
+export function getDocumentById(req: Request, res: Response): void {
+    res.status(200).json({
+        success: true,
+        data: {},
+        error: null,
+    });
+}
+
